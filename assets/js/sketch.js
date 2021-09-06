@@ -1,7 +1,16 @@
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(500, 400);
+  soundTrack.loop();
 }
 
 function draw() {
-  background(220);
+  background(bgImage);
+  drawPlayer();
+  drawCars();
+  movePlayer();
+  moveCars();
+  createCarLoops();
+  verifyCollision();
+  showScore();
+  addPoints();
 }
